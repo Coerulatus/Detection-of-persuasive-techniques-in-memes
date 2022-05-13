@@ -21,11 +21,11 @@ The competition proposed three tasks, but we only worked on the first and the th
 The repository contains the main colab notebook used for comparing the models performances and the notebooks used for training the models. The pretrained models are not shared because of their dimensions.
 
 The models used in this work are several:
-  - Different text classifiers based on **transformers** were tried on the first task
+  - Different text classifiers based on **transformers** were tried on the first task, in particular **BERT**[1]-like pretrained models were used
   - An ensemble of the best models was used for the final predictions
-  - An image classifier using **ResNet50** was used on task 3
+  - An image classifier using **ResNet50**[2] was used on task 3
   - An ensemble using a text classifier and ResNet50 was tried
-  - **DVTT** models was tried on task 3: it uses two encoders, one for the textual part and one for the image, and then two transformers are used, one for the visual part and one for the textual part. The peculiarity is in the use of the visual part to condition the textual transformer and viceversa. 
+  - **DVTT**[3] models was tried on task 3: it uses two encoders, one for the textual part and one for the image, and then two transformers are used, one for the visual part and one for the textual part. The peculiarity is in the use of the visual part to condition the textual transformer and viceversa. 
   
 <p align="center">
   <img src="/src/dvtt.jpeg" width="600" title="DVTT architecture">
